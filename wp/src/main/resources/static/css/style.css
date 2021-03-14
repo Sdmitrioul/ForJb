@@ -1,0 +1,106 @@
+:root {
+    --font-color: rgb(223, 223, 223);
+    --font-color-dark: rgb(230, 230, 232);
+    --background-color: rgb(223, 223, 223);
+    --border-radius: 6px;
+    --yellow: rgb(225, 188, 89);
+    --border-color: rgb(95, 19, 15);
+    --datatable-dark-cell-color: rgb(230, 223, 223);
+    background-color: var(--background-color);
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+html {
+    min-width: 600px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--font-color);
+    margin: 1rem 10vmin;
+    height: max-content;
+    border-radius: var(--border-radius);
+    align-self: center;
+}
+
+header {
+    overflow: auto;
+    border-bottom: 2px solid var(--border-color);
+    width: 100%;
+}
+
+.middle {
+    margin-top: 1rem;
+    overflow: auto;
+    margin-inside: 1rem;
+}
+
+.middle .form {
+    margin: 2rem;
+    display: inline-block;
+}
+
+footer {
+    margin-top: 2rem;
+    border-top: 2px solid var(--border-color);
+    padding-top: 0.5rem;
+    overflow: auto;
+    text-align: center;
+}
+
+footer .logo img {
+    max-width: 300px;
+    height: auto;
+}
+
+header .enter-or-register-box,
+header .name-logout {
+    float: right;
+    padding: 1rem;
+}
+
+header .container {
+    width: 100%;
+}
+
+header .enter-or-register-box a,
+header .name-logout a {
+    border: 1px solid var(--background-color);
+    padding: 0.2rem;
+    margin: 0.3rem;
+    border-radius: var(--border-radius);
+}
+
+header .enter-or-register-box a:hover,
+header .name-logout a:hover {
+    background-color: var(--font-color-dark);
+}
+
+header nav ul li{
+    display: inline;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+
